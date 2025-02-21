@@ -1,0 +1,67 @@
+
+" SYNTAX HIGHLIGHTING: Activates syntax highlighting for code files.
+
+syntax on
+
+" FILE FORMAT AND ENCODING: Sets the file format to Unix and the encoding to UTF-8.
+
+set fileformat=unix
+set encoding=UTF-8
+
+" TABULATION AND INDENTATION: Configures tab and indentation settings.
+
+set tabstop=4                    " Number of spaces a tab counts for.
+set softtabstop=4                " Number of spaces for a tab in insert mode.
+set shiftwidth=4                 " Number of spaces for indentation.
+set autoindent                   " Automatically indent new lines.
+set smartindent                  " Smart indentation for C-like languages.
+set noexpandtab                  " Do not use tabs for indentation.
+set smarttab                     " Use tabs for indentation if possible, spaces otherwise.
+set nowrap                       " Disable line wrapping.
+
+" USER INTERFACE: Configures various user interface elements.
+
+set mouse=a                      " Enables mouse support.
+set cursorline                   " Highlights the current line.
+set cursorcolumn                 " Highlights the current column.
+set number                       " Displays line numbers.
+set scrolloff=8                  " Minimum lines to keep above and below cursor.
+set signcolumn=number            " Sets the column for signs.
+set noshowmode                   " Hides the mode shown in the status line.
+set showcmd                      " Shows command being entered.
+set conceallevel=1               " Enables concealing of text.
+set shortmess+=c                 " Shortens messages displayed by Vim.
+
+" ERROR AND FILE HANDLING: Configures error handling and file operations.
+
+set noerrorbells                 " Disables error bells.
+set visualbell                   " Enables visual bell instead of beeping.
+set t_vb=                        " Clears the visual bell configuration.
+set noswapfile                   " Disables swap file creation.
+set nobackup                     " Disables backup file creation.
+set undodir=~/.vim/undodir       " Sets the directory for undo files.
+set undofile                     " Enables persistent undo.
+set clipboard=unnamed            " Sets the unnamed clipboard.
+
+" SEARCH: Configures search behavior.
+
+set ignorecase                   " Ignores case when searching.
+set smartcase                    " Uses case-sensitive search if pattern contains uppercase.
+set incsearch                    " Shows search matches incrementally.
+set hlsearch                     " Highlights search matches.
+
+" KEYBOARD SHORTCUTS AND PLUGIN SETTINGS: Configures keyboard shortcuts and plugins.
+
+nnoremap <CR> :noh<CR><CR>:<backspace>  " Clears search highlight and executes carriage return.
+let g:gruvbox_italic=1           " Sets italic style for Gruvbox theme.
+
+" COLOR SCHEME AND THEME: Configures colors and theme settings.
+
+set background=dark              " Sets dark background for colorscheme.
+hi Normal guibg=NONE ctermbg=NONE  " Sets background color to none for Normal mode.
+let g:terminal_ansi_colors = [
+    \ '#282828', '#cc241d', '#98971a', '#d79921', '#EFFEFF', '#b16286',
+    \ '#689d6a', '#a89984', '#928374', '#fb4934', '#b8bb26', '#fabd2f',
+    \ '#83a598', '#d3869b', '#8ec07c', '#ebdbb2',
+    \ ]
+
