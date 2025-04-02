@@ -3,14 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ctacconi <ctacconi@student.42barcel>       +#+  +:+       +#+        */
+/*   By: eduherna <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/28 17:20:05 by ctacconi          #+#    #+#             */
-/*   Updated: 2023/11/02 18:41:49 by ctacconi         ###   ########.fr       */
+/*   Created: 2025/04/02 19:56:26 by eduherna          #+#    #+#             */
+/*   Updated: 2025/04/02 20:00:43 by eduherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include <stdio.h>
 
 char	*ft_strcpy(char *dest, char *src)
@@ -27,11 +26,14 @@ char	*ft_strcpy(char *dest, char *src)
 	return (dest);
 }
 /*
+#include <string.h>
+
 int	main()
 {
-	char	src[] = "Hola, Carolina!";
+	char	src[] = "Hello World!";
 	char	dest[] = " ";
 
 	printf("%s", ft_strcpy(dest, src));
 	return (0);
-}*/
+}
+*/
