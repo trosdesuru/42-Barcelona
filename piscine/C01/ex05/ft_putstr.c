@@ -6,9 +6,11 @@
 /*   By: eduherna <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/25 20:57:56 by eduherna          #+#    #+#             */
-/*   Updated: 2025/03/31 20:40:39 by eduherna         ###   ########.fr       */
+/*   Updated: 2025/04/02 19:50:07 by eduherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <unistd.h>
 
 void	ft_putstr(char *str)
 {
