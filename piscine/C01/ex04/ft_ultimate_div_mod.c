@@ -6,7 +6,7 @@
 /*   By: eduherna <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/25 20:37:59 by eduherna          #+#    #+#             */
-/*   Updated: 2025/04/02 19:49:13 by eduherna         ###   ########.fr       */
+/*   Updated: 2025/04/03 19:29:45 by eduherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,11 @@ void	ft_ultimate_div_mod(int *a, int *b)
 	int	ptr_a;
 	int	ptr_b;
 
-	ptr_a = *a;
-	ptr_b = *b;
-	*a = ptr_a / ptr_b;
-	*b = ptr_a % ptr_b;
+	if (*b != 0)
+	{
+		ptr_a = *a;
+		ptr_b = *b;
+		*a = ptr_a / ptr_b;
+		*b = ptr_a % ptr_b;
+	}
 }
