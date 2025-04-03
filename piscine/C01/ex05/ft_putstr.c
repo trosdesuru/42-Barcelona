@@ -6,7 +6,7 @@
 /*   By: eduherna <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/25 20:57:56 by eduherna          #+#    #+#             */
-/*   Updated: 2025/04/02 19:50:07 by eduherna         ###   ########.fr       */
+/*   Updated: 2025/04/03 19:30:47 by eduherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,9 @@
 
 void	ft_putstr(char *str)
 {
-	char	*t;
-
-	t = str;
-	while (*t != '\0')
+	while (*str)
 	{
-		write (1, t, 1);
-		t++;
+		write (1, str, 1);
+		str++;
 	}
 }
