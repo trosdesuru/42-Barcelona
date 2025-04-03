@@ -6,11 +6,9 @@
 /*   By: eduherna <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/02 20:11:11 by eduherna          #+#    #+#             */
-/*   Updated: 2025/04/02 20:43:30 by eduherna         ###   ########.fr       */
+/*   Updated: 2025/04/03 19:31:23 by eduherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
 
 void	ft_rev_int_tab(int *tab, int size)
 {
