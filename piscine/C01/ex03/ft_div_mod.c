@@ -6,12 +6,15 @@
 /*   By: eduherna <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/25 20:34:49 by eduherna          #+#    #+#             */
-/*   Updated: 2025/04/01 20:05:48 by eduherna         ###   ########.fr       */
+/*   Updated: 2025/04/03 19:27:00 by eduherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_div_mod(int a, int b, int *div, int *mod)
 {
-	*div = a / b;
-	*mod = a % b;
+	if (b != 0)
+	{
+		*div = a / b;
+		*mod = a % b;
+	}
 }
